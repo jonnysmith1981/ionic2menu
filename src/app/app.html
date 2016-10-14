@@ -1,0 +1,16 @@
+<ion-menu [content]="content" class="sidemenu">
+  <ion-toolbar primary>
+    <ion-title>Menu</ion-title>
+  </ion-toolbar>
+ 
+  <ion-content>
+    <ion-list>
+      <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+        <ion-icon name="{{p.icon}}"></ion-icon>
+      </button>
+    </ion-list>
+    <!--<p class="version">shopd_customer v0.1</p>--> 
+  </ion-content>
+</ion-menu>
+<ion-nav #nav [root]="rootPage" #content swipe-back-enabled="false"></ion-nav>

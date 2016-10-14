@@ -1,0 +1,42 @@
+home {
+
+  ion-slides {
+    height: 30vh;
+    background: $shopdlight;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination {
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: rgba(33,120,33,0.5);;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $shopdgreen;
+  }
+
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+  }
+}
